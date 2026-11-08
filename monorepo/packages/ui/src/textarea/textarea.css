@@ -1,0 +1,5 @@
+.cf-textarea {
+  min-height: 96px;
+  padding: var(--cf-space-2) var(--cf-space-3);
+  resize: vertical;
+}

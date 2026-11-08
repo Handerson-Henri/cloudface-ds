@@ -1,0 +1,17 @@
+.cf-search {
+  position: relative;
+  display: block;
+  color: var(--cf-color-fg-muted);
+}
+
+.cf-search svg {
+  position: absolute;
+  left: var(--cf-space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.cf-search__input {
+  padding-left: var(--cf-space-8);
+}

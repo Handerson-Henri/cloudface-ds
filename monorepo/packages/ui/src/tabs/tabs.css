@@ -1,0 +1,32 @@
+@import '../shared/focus.css';
+
+.cf-tabs__list {
+  display: flex;
+  gap: var(--cf-space-1);
+  border-bottom: 1px solid var(--cf-color-border-default);
+}
+
+.cf-tabs__tab {
+  background: none;
+  border: 0;
+  color: var(--cf-color-fg-muted);
+  padding: var(--cf-space-2) var(--cf-space-3);
+  font-family: var(--cf-font-body);
+  cursor: pointer;
+}
+
+.cf-tabs__tab:hover {
+  color: var(--cf-color-fg-default);
+}
+
+.cf-tabs__tab[aria-selected='true'] {
+  color: var(--cf-color-fg-default);
+  box-shadow: inset 0 -2px 0 var(--cf-color-fg-accent);
+  font-weight: 600;
+}
+
+.cf-tabs__panel {
+  padding: var(--cf-space-4) 0;
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+}

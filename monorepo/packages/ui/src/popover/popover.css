@@ -1,0 +1,18 @@
+.cf-popover {
+  position: relative;
+  display: inline-flex;
+}
+
+.cf-popover__panel {
+  position: absolute;
+  top: calc(100% + var(--cf-space-1));
+  left: 0;
+  z-index: var(--cf-z-dropdown);
+  min-width: 12rem;
+  padding: var(--cf-space-3);
+  background: var(--cf-color-bg-surface-raised);
+  color: var(--cf-color-fg-default);
+  border: 1px solid var(--cf-color-border-default);
+  border-radius: var(--cf-radius-md);
+  font-family: var(--cf-font-body);
+}

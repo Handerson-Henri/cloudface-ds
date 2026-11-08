@@ -1,0 +1,22 @@
+.cf-modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--cf-z-modal);
+}
+
+.cf-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--cf-color-bg-overlay);
+}
+
+.cf-modal__box {
+  position: relative;
+  margin: 10vh auto;
+  max-width: 480px;
+  padding: var(--cf-space-6);
+  background: var(--cf-color-bg-surface-raised);
+  color: var(--cf-color-fg-default);
+  border-radius: var(--cf-radius-lg);
+  font-family: var(--cf-font-body);
+}

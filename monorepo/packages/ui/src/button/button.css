@@ -1,0 +1,147 @@
+@import '../shared/focus.css';
+@import '../shared/sr-only.css';
+
+.cf-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cf-space-2);
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 24px;
+  font-family: var(--cf-font-body);
+  font-weight: var(--cf-text-sm-weight);
+  font-size: var(--cf-text-sm);
+  line-height: var(--cf-text-sm-lh);
+  border-radius: var(--cf-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background var(--cf-motion-duration-fast) var(--cf-motion-easing-standard),
+    color var(--cf-motion-duration-fast) var(--cf-motion-easing-standard);
+}
+
+.cf-button--sm {
+  height: 32px;
+  padding: 0 var(--cf-space-3);
+}
+
+.cf-button--md {
+  height: 40px;
+  padding: 0 var(--cf-space-4);
+}
+
+.cf-button--lg {
+  height: 48px;
+  padding: 0 var(--cf-space-6);
+}
+
+.cf-button--primary {
+  background: var(--cf-color-action-primary-bg);
+  color: var(--cf-color-action-primary-fg);
+}
+
+.cf-button--primary:hover:not(:disabled):not([aria-busy='true']) {
+  background: var(--cf-color-action-primary-bg-hover);
+}
+
+.cf-button--primary:active:not(:disabled) {
+  background: var(--cf-color-action-primary-bg-pressed);
+}
+
+.cf-button__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.cf-button--secondary {
+  background: var(--cf-color-bg-surface);
+  color: var(--cf-color-fg-default);
+  border-color: var(--cf-color-border-default);
+}
+
+.cf-button--secondary:hover:not(:disabled):not([aria-busy='true']) {
+  background: var(--cf-color-bg-surface-raised);
+}
+
+.cf-button--secondary:active:not(:disabled) {
+  background: var(--cf-color-bg-canvas);
+}
+
+.cf-button--outline {
+  background: transparent;
+  color: var(--cf-color-fg-accent);
+  border-color: var(--cf-color-fg-accent);
+}
+
+.cf-button--outline:hover:not(:disabled):not([aria-busy='true']) {
+  background: color-mix(in srgb, var(--cf-color-fg-accent) 12%, transparent);
+}
+
+.cf-button--outline:active:not(:disabled) {
+  background: color-mix(in srgb, var(--cf-color-fg-accent) 22%, transparent);
+}
+
+.cf-button--ghost {
+  background: transparent;
+  color: var(--cf-color-fg-muted);
+}
+
+.cf-button--ghost:hover:not(:disabled):not([aria-busy='true']) {
+  color: var(--cf-color-fg-accent-hover);
+}
+
+.cf-button--ghost:active:not(:disabled) {
+  color: var(--cf-color-fg-accent);
+}
+
+[data-theme='light'] .cf-button--ghost {
+  background: color-mix(in srgb, var(--cf-color-fg-default) 6%, transparent);
+}
+
+.cf-button--destructive {
+  background: var(--cf-color-feedback-error);
+  color: var(--cf-color-action-primary-fg);
+}
+
+.cf-button--destructive:hover:not(:disabled):not([aria-busy='true']) {
+  background: color-mix(in srgb, var(--cf-color-feedback-error) 80%, var(--cf-color-fg-default));
+}
+
+.cf-button--destructive:active:not(:disabled) {
+  background: color-mix(in srgb, var(--cf-color-feedback-error) 70%, var(--cf-color-bg-canvas));
+}
+
+.cf-button:disabled,
+.cf-button[aria-busy='true'] {
+  background: var(--cf-color-bg-disabled);
+  color: var(--cf-color-fg-disabled);
+  border-color: var(--cf-color-border-default);
+  cursor: not-allowed;
+}
+
+.cf-button[aria-busy='true'] {
+  pointer-events: none;
+  min-width: 8ch;
+}
+
+@media (forced-colors: active) {
+  .cf-button {
+    border-color: ButtonText;
+  }
+
+  .cf-button--primary,
+  .cf-button--destructive {
+    background: ButtonText;
+    color: ButtonFace;
+  }
+
+  .cf-button--ghost,
+  .cf-button--outline,
+  .cf-button--secondary,
+  [data-theme='light'] .cf-button--ghost {
+    background: Canvas;
+    color: ButtonText;
+  }
+}
+

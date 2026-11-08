@@ -1,0 +1,51 @@
+.cf-focus:focus-visible {
+  outline: var(--cf-focus-ring-width) solid var(--cf-color-focus-ring);
+  outline-offset: var(--cf-focus-ring-offset);
+}
+
+@media (forced-colors: active) {
+  .cf-focus:focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .cf-spinner {
+    border-color: GrayText;
+    border-top-color: CanvasText;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cf-spinner {
+    animation: none;
+  }
+}
+
+@keyframes cf-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cf-spinner {
+  width: 1em;
+  height: 1em;
+  border: 2px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: cf-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+.cf-spinner--sm {
+  width: 12px;
+  height: 12px;
+}
+.cf-spinner--md {
+  width: 16px;
+  height: 16px;
+}
+.cf-spinner--lg {
+  width: 24px;
+  height: 24px;
+}

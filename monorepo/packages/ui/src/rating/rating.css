@@ -1,0 +1,30 @@
+@import '../shared/sr-only.css';
+@import '../shared/focus.css';
+
+.cf-rating {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--cf-space-1);
+  color: var(--cf-color-fg-muted);
+}
+
+.cf-rating legend {
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  color: var(--cf-color-fg-default);
+  margin-bottom: var(--cf-space-2);
+}
+
+.cf-rating__opt {
+  cursor: pointer;
+}
+
+.cf-rating:has(:checked) .cf-rating__opt {
+  color: var(--cf-color-feedback-warning);
+}
+
+.cf-rating__opt:has(:checked) ~ .cf-rating__opt {
+  color: var(--cf-color-fg-muted);
+}

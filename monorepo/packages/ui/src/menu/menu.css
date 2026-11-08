@@ -1,0 +1,22 @@
+.cf-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+}
+
+.cf-menu__item {
+  text-align: left;
+  background: none;
+  border: 0;
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  padding: var(--cf-space-2);
+  border-radius: var(--cf-radius-sm);
+  cursor: pointer;
+}
+
+.cf-menu__item:hover,
+.cf-menu__item:focus-visible {
+  background: color-mix(in srgb, var(--cf-color-action-primary-bg) 12%, transparent);
+}

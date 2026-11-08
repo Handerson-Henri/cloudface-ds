@@ -1,0 +1,4 @@
+.cf-stack {
+  display: flex;
+  flex-direction: column;
+}

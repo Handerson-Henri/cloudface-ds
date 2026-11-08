@@ -1,0 +1,21 @@
+.cf-toaster {
+  position: fixed;
+  right: var(--cf-space-4);
+  bottom: var(--cf-space-4);
+  z-index: var(--cf-z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-2);
+  max-width: 360px;
+}
+
+.cf-toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--cf-space-3);
+}
+
+.cf-toast__body {
+  flex: 1;
+}

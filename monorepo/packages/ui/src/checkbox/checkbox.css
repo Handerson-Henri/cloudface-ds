@@ -1,0 +1,21 @@
+@import '../shared/focus.css';
+
+.cf-check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cf-space-2);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  min-height: 24px;
+}
+
+.cf-check__input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--cf-color-action-primary-bg);
+}
+
+.cf-check:has(:disabled) {
+  color: var(--cf-color-fg-disabled);
+}

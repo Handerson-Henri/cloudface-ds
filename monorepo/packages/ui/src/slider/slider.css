@@ -1,0 +1,19 @@
+.cf-slider {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-2);
+  max-width: 320px;
+  font-family: var(--cf-font-body);
+  color: var(--cf-color-fg-default);
+}
+
+.cf-slider__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--cf-text-sm);
+}
+
+.cf-slider__input {
+  accent-color: var(--cf-color-action-primary-bg);
+  min-height: 24px;
+}

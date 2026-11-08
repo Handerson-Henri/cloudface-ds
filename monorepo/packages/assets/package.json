@@ -1,0 +1,17 @@
+{
+  "name": "@cloudface/assets",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./css/fonts.css": "./css/fonts.css"
+  },
+  "files": [
+    "css",
+    "logos",
+    "fonts",
+    "movimento",
+    "IDENTIDADE_VISUAL.md",
+    "README.md"
+  ]
+}

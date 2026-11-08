@@ -1,0 +1,23 @@
+.cf-dl {
+  margin: 0;
+  font-family: var(--cf-font-body);
+}
+
+.cf-dl__row {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: var(--cf-space-3);
+  padding: var(--cf-space-2) 0;
+  border-bottom: 1px solid var(--cf-color-border-default);
+}
+
+.cf-dl dt {
+  color: var(--cf-color-fg-muted);
+  font-size: var(--cf-text-sm);
+}
+
+.cf-dl dd {
+  margin: 0;
+  color: var(--cf-color-fg-default);
+  font-size: var(--cf-text-sm);
+}

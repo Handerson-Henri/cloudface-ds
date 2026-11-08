@@ -1,0 +1,45 @@
+.cf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cf-space-1);
+  padding: 0 var(--cf-space-2);
+  border-radius: var(--cf-radius-full);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-xs);
+  line-height: var(--cf-text-xs-lh);
+  font-weight: 500;
+}
+
+.cf-badge--sm {
+  min-height: 16px;
+  padding: 0 var(--cf-space-1);
+}
+
+.cf-badge--md {
+  min-height: 20px;
+}
+
+.cf-badge--default {
+  color: var(--cf-color-fg-accent);
+  background: color-mix(in srgb, var(--cf-color-fg-accent) 15%, transparent);
+}
+
+.cf-badge--info {
+  color: var(--cf-color-feedback-info);
+  background: color-mix(in srgb, var(--cf-color-feedback-info) 15%, transparent);
+}
+
+.cf-badge--success {
+  color: var(--cf-color-feedback-success);
+  background: color-mix(in srgb, var(--cf-color-feedback-success) 15%, transparent);
+}
+
+.cf-badge--warning {
+  color: var(--cf-color-feedback-warning);
+  background: color-mix(in srgb, var(--cf-color-feedback-warning) 15%, transparent);
+}
+
+.cf-badge--error {
+  color: var(--cf-color-feedback-error);
+  background: color-mix(in srgb, var(--cf-color-feedback-error) 15%, transparent);
+}

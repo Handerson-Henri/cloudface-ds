@@ -1,0 +1,30 @@
+@import '../modal/modal.css';
+
+.cf-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--cf-z-modal);
+}
+
+.cf-drawer__panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 320px;
+  background: var(--cf-color-bg-surface-raised);
+  color: var(--cf-color-fg-default);
+  padding: var(--cf-space-4);
+  font-family: var(--cf-font-body);
+}
+
+.cf-drawer--bottom .cf-drawer__panel {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: var(--cf-radius-lg) var(--cf-radius-lg) 0 0;
+}

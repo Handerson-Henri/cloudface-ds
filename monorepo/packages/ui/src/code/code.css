@@ -1,0 +1,8 @@
+.cf-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: var(--cf-radius-sm);
+  background: var(--cf-color-bg-surface-raised);
+  color: var(--cf-color-feedback-info);
+}

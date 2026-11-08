@@ -1,0 +1,11 @@
+.cf-empty {
+  text-align: center;
+  padding: var(--cf-space-8);
+  color: var(--cf-color-fg-muted);
+  font-family: var(--cf-font-body);
+}
+
+.cf-empty h2 {
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-heading);
+}

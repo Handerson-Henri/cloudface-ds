@@ -1,0 +1,14 @@
+.cf-skip {
+  position: absolute;
+  left: -999px;
+  top: var(--cf-space-3);
+  z-index: var(--cf-z-modal);
+  padding: var(--cf-space-2) var(--cf-space-3);
+  background: var(--cf-color-bg-surface-raised);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+}
+
+.cf-skip:focus {
+  left: var(--cf-space-4);
+}

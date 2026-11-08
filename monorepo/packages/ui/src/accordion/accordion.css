@@ -1,0 +1,17 @@
+@import '../shared/focus.css';
+
+.cf-acc__item {
+  border-bottom: 1px solid var(--cf-color-border-default);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+}
+
+.cf-acc__item summary {
+  cursor: pointer;
+  padding: var(--cf-space-3) 0;
+}
+
+.cf-acc__body {
+  padding: 0 0 var(--cf-space-3);
+  color: var(--cf-color-fg-muted);
+}

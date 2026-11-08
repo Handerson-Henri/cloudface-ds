@@ -1,0 +1,6 @@
+.cf-container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: var(--cf-space-4);
+}

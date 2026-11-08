@@ -1,0 +1,14 @@
+.cf-text {
+  margin: 0;
+  color: var(--cf-color-fg-default);
+  font-size: var(--cf-text-md);
+  line-height: var(--cf-text-md-lh);
+}
+
+.cf-text--body {
+  font-family: var(--cf-font-body);
+}
+
+.cf-text--content {
+  font-family: var(--cf-font-content);
+}

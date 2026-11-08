@@ -1,0 +1,33 @@
+.cf-progress {
+  height: 8px;
+  background: var(--cf-color-bg-disabled);
+  border-radius: var(--cf-radius-full);
+  overflow: hidden;
+}
+
+.cf-progress__bar {
+  display: block;
+  height: 100%;
+  background: var(--cf-color-action-primary-bg);
+}
+
+.cf-progress--indeterminate .cf-progress__bar {
+  width: 35%;
+  animation: cf-progress-indeterminate 1.2s ease-in-out infinite;
+}
+
+@keyframes cf-progress-indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(280%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cf-progress--indeterminate .cf-progress__bar {
+    animation: none;
+    width: 50%;
+  }
+}

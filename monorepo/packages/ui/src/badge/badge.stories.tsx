@@ -1,0 +1,11 @@
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Badge } from './badge';
+const meta = { title: 'Feedback/Badge', component: Badge } satisfies Meta<typeof Badge>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export const Default: Story = { args: { children: 'default' } };
+export const Info: Story = { args: { variant: 'info', children: 'info' } };
+export const Success: Story = { args: { variant: 'success', children: 'Online' } };
+export const Warning: Story = { args: { variant: 'warning', children: 'warning' } };
+export const Error: Story = { args: { variant: 'error', children: 'Offline' } };
+export const Small: Story = { args: { size: 'sm', variant: 'info', children: 'sm' } };

@@ -1,0 +1,5 @@
+.cf-date-field {
+  display: grid;
+  gap: var(--cf-space-2);
+  max-width: 24rem;
+}

@@ -1,0 +1,8 @@
+.cf-pager {
+  display: flex;
+  align-items: center;
+  gap: var(--cf-space-3);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+}

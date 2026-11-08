@@ -1,0 +1,30 @@
+.cf-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+}
+
+.cf-table th,
+.cf-table td {
+  text-align: left;
+  padding: var(--cf-space-2) var(--cf-space-3);
+  border-bottom: 1px solid var(--cf-color-border-default);
+}
+
+.cf-table th {
+  color: var(--cf-color-fg-muted);
+  font-weight: 500;
+}
+
+.cf-table tbody tr:hover {
+  background: var(--cf-color-bg-surface-raised);
+}
+
+.cf-table__caption {
+  caption-side: top;
+  padding: 0 0 var(--cf-space-2);
+  color: var(--cf-color-fg-muted);
+  text-align: left;
+}

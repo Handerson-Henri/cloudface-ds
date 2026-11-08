@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 160 580 380" fill="none" role="img" aria-label="Cloudface">
+  <defs>
+    <linearGradient id="cfGrad" x1="200" y1="428" x2="711" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00C2FF"/>
+      <stop offset="1" stop-color="#06279E"/>
+    </linearGradient>
+    <linearGradient id="cfGradSec" x1="200" y1="480" x2="400" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#262A35"/>
+      <stop offset="0.5" stop-color="#47495B"/>
+      <stop offset="1" stop-color="#C4BFEB"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#cfGrad)" d="M267.77,428.03c17.58-15,42.73-32.07,78.58-49.79,110.79-54.73,200.68-77.03,217.41-58.79,27.97,30.51-109.35,106.63-176.79,139.55,46.03,6.99,85.75,6.59,119.43,1.18,99.48-15.95,147.42-70.95,144.66-126.56-5.06-102.25-164.35-155.55-286.77-131.06-99.53,19.91-141.77,81.59-153.61,116.1-27.07,79.06,16.51,162.97,16.51,162.97,0,0,3.83-22.26,40.58-53.6"/>
+  <path fill="url(#cfGradSec)" d="M227.19,481.63c18.81,40.54,146.33-16.22,146.33-16.22,4.06-1.89,8.57-4.03,13.44-6.41-35.87-5.45-75.57-15.39-119.2-30.98-36.75,31.34-40.58,53.6-40.58,53.6"/>
+</svg>

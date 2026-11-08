@@ -1,0 +1,168 @@
+@import '../shared/focus.css';
+
+.cf-sidebar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: calc(var(--cf-space-12) * 5);
+  min-height: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  background: var(--cf-color-bg-surface);
+  border-right: 1px solid var(--cf-color-border-default);
+  color: var(--cf-color-fg-default);
+}
+
+.cf-sidebar--collapsed {
+  width: calc(var(--cf-space-12) * 1.5);
+}
+
+.cf-sidebar--collapsed .cf-label,
+.cf-sidebar--collapsed .cf-badge {
+  display: none;
+}
+
+.cf-sidebar--collapsed .cf-sidebar__footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--cf-space-2);
+}
+
+.cf-sidebar--collapsed .cf-sidebar-item {
+  justify-content: center;
+  padding-inline: 0;
+}
+
+.cf-sidebar__header {
+  padding: var(--cf-space-6) var(--cf-space-4) var(--cf-space-4);
+  font-family: var(--cf-font-heading);
+  font-size: var(--cf-text-lg);
+  line-height: var(--cf-text-lg-lh);
+  font-weight: 600;
+}
+
+.cf-sidebar__header img {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+.cf-sidebar--collapsed .cf-sidebar__header {
+  display: flex;
+  justify-content: center;
+  padding: var(--cf-space-4) var(--cf-space-2);
+}
+
+.cf-sidebar__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-1);
+  padding: var(--cf-space-2) var(--cf-space-3) var(--cf-space-4);
+}
+
+.cf-sidebar__section .cf-label {
+  padding: var(--cf-space-2) var(--cf-space-2) var(--cf-space-1);
+  font-size: var(--cf-text-xs);
+  line-height: var(--cf-text-xs-lh);
+  font-weight: var(--cf-text-xs-weight);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cf-color-fg-muted);
+}
+
+.cf-sidebar-item {
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: var(--cf-radius-md);
+}
+
+.cf-sidebar-item .cf-badge {
+  margin-inline-start: auto;
+}
+
+[data-theme='light'] .cf-button.cf-sidebar-item:not(.cf-sidebar-item--current) {
+  background: transparent;
+}
+
+.cf-sidebar-item:hover:not(:disabled):not(.cf-sidebar-item--current) {
+  color: var(--cf-color-fg-accent-hover);
+  background: color-mix(in srgb, var(--cf-color-fg-accent) 12%, transparent);
+}
+
+.cf-button.cf-sidebar-item--current,
+a.cf-sidebar-item--current {
+  background: var(--cf-color-action-primary-bg);
+  color: var(--cf-color-action-primary-fg);
+  font-weight: 600;
+}
+
+[data-theme='light'] .cf-button.cf-sidebar-item--current,
+[data-theme='light'] a.cf-sidebar-item--current {
+  background: var(--cf-color-action-primary-bg);
+  color: var(--cf-color-action-primary-fg);
+}
+
+.cf-button.cf-sidebar-item--current:hover:not(:disabled):not([aria-busy='true']),
+.cf-button.cf-sidebar-item--current:active:not(:disabled),
+a.cf-sidebar-item--current:hover {
+  background: var(--cf-color-action-primary-bg-hover);
+  color: var(--cf-color-action-primary-fg);
+}
+
+.cf-sidebar-item--current .cf-badge {
+  color: var(--cf-color-action-primary-fg);
+  background: color-mix(in srgb, var(--cf-color-action-primary-fg) 18%, transparent);
+}
+
+.cf-sidebar-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-1);
+}
+
+.cf-sidebar-group__trigger--static {
+  cursor: default;
+}
+
+.cf-sidebar-group__chevron {
+  margin-inline-start: auto;
+  flex-shrink: 0;
+  transform: rotate(-90deg);
+  transition: transform var(--cf-motion-duration-fast) var(--cf-motion-easing-standard);
+}
+
+.cf-sidebar-group--open .cf-sidebar-group__chevron {
+  transform: rotate(0deg);
+}
+
+.cf-sidebar-group__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-1);
+  padding-inline-start: var(--cf-space-4);
+}
+
+.cf-sidebar-group__items > .cf-sidebar-group {
+  gap: var(--cf-space-1);
+}
+
+.cf-sidebar-group__items[hidden] {
+  display: none;
+}
+
+.cf-sidebar--collapsed .cf-sidebar-group__chevron,
+.cf-sidebar--collapsed .cf-sidebar-group__items {
+  display: none;
+}
+
+.cf-sidebar__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--cf-space-3);
+  margin-top: auto;
+  padding: var(--cf-space-4);
+  border-top: 1px solid var(--cf-color-border-default);
+}

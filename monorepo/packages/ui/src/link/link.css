@@ -1,0 +1,10 @@
+.cf-link {
+  color: var(--cf-color-fg-accent);
+  font-family: var(--cf-font-body);
+  text-underline-offset: 2px;
+  text-decoration: underline;
+}
+
+.cf-link:hover {
+  color: var(--cf-color-fg-accent-hover);
+}

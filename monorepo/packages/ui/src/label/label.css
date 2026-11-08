@@ -1,0 +1,20 @@
+.cf-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cf-space-1);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  line-height: var(--cf-text-sm-lh);
+  font-weight: 500;
+  color: var(--cf-color-fg-default);
+}
+
+.cf-label__req {
+  color: var(--cf-color-fg-accent);
+}
+
+.cf-label__opt {
+  color: var(--cf-color-fg-muted);
+  font-weight: 400;
+  font-size: var(--cf-text-xs);
+}

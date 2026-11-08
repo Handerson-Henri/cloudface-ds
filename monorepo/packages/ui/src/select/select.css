@@ -1,0 +1,24 @@
+.cf-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+}
+
+.cf-select__el {
+  appearance: none;
+  padding-right: var(--cf-space-8);
+}
+
+.cf-select::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--cf-color-fg-muted);
+  border-bottom: 2px solid var(--cf-color-fg-muted);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}

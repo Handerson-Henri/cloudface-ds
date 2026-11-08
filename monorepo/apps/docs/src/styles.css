@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  background: var(--cf-bg);
+  color: var(--cf-text);
+  font-family: var(--cf-font-body);
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--cf-color-bg-canvas);
+}
+
+.shell {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  margin: 0 var(--cf-space-4) var(--cf-space-4);
+  padding: var(--cf-space-8);
+  background: var(--cf-color-bg-surface);
+  border-radius: var(--cf-radius-lg);
+}
+
+.main h1 {
+  font-family: var(--cf-font-heading);
+  font-size: var(--cf-text-3xl);
+  line-height: 56px;
+  margin: 0 0 var(--cf-space-4);
+}
+
+.main h2 {
+  font-family: var(--cf-font-heading);
+  font-size: var(--cf-text-xl);
+  line-height: 32px;
+  margin: var(--cf-space-8) 0 var(--cf-space-3);
+}
+
+.main p,
+.main li {
+  color: var(--cf-text-muted);
+  font-size: var(--cf-text-md);
+  line-height: 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cf-space-3);
+  align-items: center;
+  margin: var(--cf-space-4) 0;
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-2);
+  width: 140px;
+}
+
+.swatch__chip {
+  height: 48px;
+  border-radius: var(--cf-radius-md);
+  border: 1px solid var(--cf-border);
+}
+
+.muted {
+  color: var(--cf-text-muted);
+  font-size: var(--cf-text-sm);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-2);
+  max-width: 320px;
+}
+
+.cf-docs-logo,
+.cf-docs-mark {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+.cf-docs-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--cf-space-2);
+}
+
+.cf-docs-wordmark {
+  font-family: var(--cf-font-heading);
+  font-weight: 600;
+  font-size: var(--cf-text-lg);
+  color: var(--cf-color-fg-default);
+}
+
+.cf-docs-asset {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--cf-space-4);
+  border-radius: var(--cf-radius-md);
+}
+
+.cf-docs-asset--dark {
+  background: var(--cf-navy-950);
+}
+
+.cf-docs-asset--light {
+  background: var(--cf-gray-50);
+}
+
+.cf-sidebar--collapsed .cf-switch span:last-child {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}

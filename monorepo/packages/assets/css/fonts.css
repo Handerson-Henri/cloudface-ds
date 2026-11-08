@@ -1,0 +1,36 @@
+/*
+  Fontes oficiais do Cloudface-ID-Visual.
+  Fallback sans-serif nas CSS variables de @cloudface/tokens.
+*/
+
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/Sora-Variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/Manrope-Variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/DMSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/BarlowCondensed-Bold.ttf') format('truetype');
+}

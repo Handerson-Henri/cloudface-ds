@@ -1,0 +1,32 @@
+.cf-divider {
+  border: 0;
+  border-top: 1px solid var(--cf-color-border-default);
+  margin: var(--cf-space-4) 0;
+}
+
+.cf-divider--vertical {
+  display: inline-block;
+  width: 0;
+  height: 1.5em;
+  margin: 0 var(--cf-space-3);
+  border-top: 0;
+  border-left: 1px solid var(--cf-color-border-default);
+  vertical-align: middle;
+}
+
+.cf-divider--labeled {
+  display: flex;
+  align-items: center;
+  gap: var(--cf-space-3);
+  border: 0;
+  color: var(--cf-color-fg-muted);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-xs);
+}
+
+.cf-divider--labeled::before,
+.cf-divider--labeled::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid var(--cf-color-border-default);
+}

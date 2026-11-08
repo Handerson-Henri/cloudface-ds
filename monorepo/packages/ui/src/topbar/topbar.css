@@ -1,0 +1,45 @@
+.cf-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--cf-space-3);
+  min-height: calc(var(--cf-space-8) * 2);
+  padding: 0 var(--cf-space-4);
+  background: var(--cf-color-bg-canvas);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-heading);
+}
+
+.cf-topbar__start,
+.cf-topbar__end {
+  display: flex;
+  align-items: center;
+  gap: var(--cf-space-2);
+  min-width: 0;
+}
+
+.cf-topbar__start {
+  flex: 1;
+}
+
+.cf-topbar__search {
+  flex: 1 1 calc(var(--cf-space-12) * 4);
+  min-width: 0;
+  max-width: calc(var(--cf-space-12) * 6);
+}
+
+.cf-topbar__search .cf-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cf-topbar__search .cf-field {
+  gap: 0;
+}

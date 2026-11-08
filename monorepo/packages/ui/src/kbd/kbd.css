@@ -1,0 +1,9 @@
+.cf-kbd {
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-xs);
+  padding: 0.1em 0.4em;
+  border: 1px solid var(--cf-color-border-default);
+  border-radius: var(--cf-radius-sm);
+  background: var(--cf-color-bg-surface);
+  color: var(--cf-color-fg-default);
+}

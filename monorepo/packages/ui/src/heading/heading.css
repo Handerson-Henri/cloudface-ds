@@ -1,0 +1,24 @@
+.cf-heading {
+  margin: 0;
+  font-family: var(--cf-font-heading);
+  color: var(--cf-color-fg-default);
+}
+
+.cf-heading--1 {
+  font-size: var(--cf-text-3xl);
+  line-height: var(--cf-text-3xl-lh);
+}
+.cf-heading--2 {
+  font-size: var(--cf-text-2xl);
+  line-height: var(--cf-text-2xl-lh);
+}
+.cf-heading--3 {
+  font-size: var(--cf-text-xl);
+  line-height: var(--cf-text-xl-lh);
+}
+.cf-heading--4,
+.cf-heading--5,
+.cf-heading--6 {
+  font-size: var(--cf-text-lg);
+  line-height: var(--cf-text-lg-lh);
+}

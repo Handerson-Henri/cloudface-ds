@@ -1,0 +1,8 @@
+html,
+body,
+.sb-show-main,
+.sb-main-padded,
+#storybook-root {
+  background: var(--cf-color-bg-canvas) !important;
+  color: var(--cf-color-fg-default);
+}

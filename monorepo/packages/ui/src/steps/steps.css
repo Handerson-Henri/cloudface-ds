@@ -1,0 +1,62 @@
+.cf-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  color: var(--cf-color-fg-muted);
+  counter-reset: cf-step;
+}
+
+.cf-steps li {
+  display: flex;
+  align-items: center;
+  gap: var(--cf-space-2);
+  counter-increment: cf-step;
+}
+
+.cf-steps li::before {
+  content: counter(cf-step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--cf-radius-full);
+  border: 1px solid var(--cf-color-border-control);
+  color: var(--cf-color-fg-muted);
+  font-size: var(--cf-text-xs);
+}
+
+.cf-steps li:not(:last-child)::after {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--cf-color-border-default);
+  margin-inline: var(--cf-space-2);
+}
+
+.cf-steps [aria-current='step'] {
+  color: var(--cf-color-fg-default);
+  font-weight: 600;
+}
+
+.cf-steps [aria-current='step']::before {
+  border-color: var(--cf-color-action-primary-bg);
+  color: var(--cf-color-action-primary-fg);
+  background: var(--cf-color-action-primary-bg);
+}
+
+.cf-steps [data-done='true'] {
+  color: var(--cf-color-feedback-success);
+}
+
+.cf-steps [data-done='true']::before {
+  border-color: var(--cf-color-feedback-success);
+  color: var(--cf-color-bg-canvas);
+  background: var(--cf-color-feedback-success);
+}

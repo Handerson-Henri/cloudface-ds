@@ -1,0 +1,13 @@
+.cf-group {
+  margin: 0;
+  padding: var(--cf-space-3);
+  border: 1px solid var(--cf-color-border-default);
+  border-radius: var(--cf-radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-2);
+}
+
+.cf-group legend {
+  padding: 0 var(--cf-space-1);
+}

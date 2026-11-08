@@ -1,0 +1,28 @@
+{
+  "name": "@cloudface/tokens",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./css/variables.css": "./css/variables.css",
+    "./json": "./json/tokens.json"
+  },
+  "files": [
+    "dist",
+    "css",
+    "json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node dist/emit.js",
+    "test": "node --test test/official-hex.test.mjs test/contrast.test.mjs"
+  },
+  "devDependencies": {
+    "@cloudface/config": "workspace:*",
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2"
+  }
+}

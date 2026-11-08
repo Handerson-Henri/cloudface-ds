@@ -1,0 +1,40 @@
+.cf-combo {
+  position: relative;
+}
+
+.cf-combo__list {
+  position: absolute;
+  z-index: var(--cf-z-dropdown);
+  left: 0;
+  right: 0;
+  margin: var(--cf-space-1) 0 0;
+  padding: var(--cf-space-1);
+  list-style: none;
+  background: var(--cf-color-bg-surface-raised);
+  border: 1px solid var(--cf-color-border-default);
+  border-radius: var(--cf-radius-md);
+  max-height: 220px;
+  overflow: auto;
+}
+
+.cf-combo__opt {
+  padding: var(--cf-space-2);
+  border-radius: var(--cf-radius-sm);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  cursor: pointer;
+}
+
+.cf-combo__opt--active {
+  background: color-mix(in srgb, var(--cf-color-action-primary-bg) 16%, transparent);
+}
+
+.cf-combo__opt--selected {
+  font-weight: 600;
+}
+
+.cf-combo__opt--empty {
+  color: var(--cf-color-fg-muted);
+  cursor: default;
+}

@@ -1,0 +1,25 @@
+.cf-stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cf-space-1);
+}
+
+.cf-stat__value {
+  font-family: var(--cf-font-display);
+  font-size: var(--cf-text-3xl);
+  line-height: var(--cf-text-3xl-lh);
+  font-weight: 700;
+  color: var(--cf-color-fg-default);
+}
+
+.cf-stat__delta {
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  color: var(--cf-color-feedback-success);
+}
+
+.cf-stat__label {
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+  color: var(--cf-color-fg-muted);
+}

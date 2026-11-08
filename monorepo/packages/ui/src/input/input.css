@@ -1,0 +1,49 @@
+@import '../shared/focus.css';
+
+.cf-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 24px;
+  padding: 0 var(--cf-space-3);
+  background: var(--cf-color-bg-surface);
+  color: var(--cf-color-fg-default);
+  border: 1px solid var(--cf-color-border-control);
+  border-radius: var(--cf-radius-md);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+}
+
+.cf-input--sm {
+  min-height: 32px;
+}
+
+.cf-input--md {
+  min-height: 40px;
+}
+
+.cf-input--lg {
+  min-height: 48px;
+}
+
+.cf-input:hover:not(:disabled):not(:focus-visible) {
+  border-color: var(--cf-color-border-strong);
+}
+
+.cf-input::placeholder {
+  color: var(--cf-color-fg-muted);
+}
+
+.cf-input--error {
+  border-color: var(--cf-color-feedback-error);
+}
+
+.cf-input:disabled {
+  background: var(--cf-color-bg-disabled);
+  color: var(--cf-color-fg-disabled);
+  cursor: not-allowed;
+}
+
+.cf-input:read-only:not(:disabled) {
+  background: var(--cf-color-bg-surface-raised);
+  border-style: dashed;
+}

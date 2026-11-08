@@ -1,0 +1,34 @@
+.cf-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--cf-space-4);
+  width: 100%;
+  padding: var(--cf-space-3) var(--cf-space-4);
+  border-bottom: 1px solid var(--cf-color-border-default);
+  font-family: var(--cf-font-body);
+  color: var(--cf-color-fg-default);
+}
+
+.cf-banner__title {
+  display: block;
+  font-size: var(--cf-text-sm);
+}
+
+.cf-banner__body {
+  margin: var(--cf-space-1) 0 0;
+  font-size: var(--cf-text-sm);
+  color: var(--cf-color-fg-muted);
+}
+
+.cf-banner--info {
+  background: color-mix(in srgb, var(--cf-color-feedback-info) 12%, var(--cf-color-bg-surface));
+}
+.cf-banner--success {
+  background: color-mix(in srgb, var(--cf-color-feedback-success) 12%, var(--cf-color-bg-surface));
+}
+.cf-banner--warning {
+  background: color-mix(in srgb, var(--cf-color-feedback-warning) 12%, var(--cf-color-bg-surface));
+}
+.cf-banner--error {
+  background: color-mix(in srgb, var(--cf-color-feedback-error) 12%, var(--cf-color-bg-surface));
+}

@@ -1,0 +1,11 @@
+.cf-avatar-group {
+  display: inline-flex;
+}
+
+.cf-avatar-group .cf-avatar {
+  box-shadow: 0 0 0 2px var(--cf-color-bg-canvas);
+}
+
+.cf-avatar-group .cf-avatar + .cf-avatar {
+  margin-left: calc(var(--cf-space-2) * -1);
+}

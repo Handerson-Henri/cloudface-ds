@@ -1,0 +1,29 @@
+.cf-alert {
+  display: flex;
+  gap: var(--cf-space-3);
+  max-width: 40rem;
+  padding: var(--cf-space-3);
+  border-radius: var(--cf-radius-md);
+  border: 1px solid var(--cf-color-border-default);
+  background: var(--cf-color-bg-surface-raised);
+  color: var(--cf-color-fg-default);
+  font-family: var(--cf-font-body);
+  font-size: var(--cf-text-sm);
+}
+
+.cf-alert--success {
+  border-color: var(--cf-color-feedback-success);
+  background: color-mix(in srgb, var(--cf-color-feedback-success) 12%, var(--cf-color-bg-surface));
+}
+.cf-alert--warning {
+  border-color: var(--cf-color-feedback-warning);
+  background: color-mix(in srgb, var(--cf-color-feedback-warning) 12%, var(--cf-color-bg-surface));
+}
+.cf-alert--error {
+  border-color: var(--cf-color-feedback-error);
+  background: color-mix(in srgb, var(--cf-color-feedback-error) 12%, var(--cf-color-bg-surface));
+}
+.cf-alert--info {
+  border-color: var(--cf-color-feedback-info);
+  background: color-mix(in srgb, var(--cf-color-feedback-info) 12%, var(--cf-color-bg-surface));
+}
